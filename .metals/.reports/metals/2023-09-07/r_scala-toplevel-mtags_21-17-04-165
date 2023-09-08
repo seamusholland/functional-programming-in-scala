@@ -1,0 +1,4 @@
+id: file://<WORKSPACE>/chapter-3/list.scala:[13..13) in Input.VirtualFile("file://<WORKSPACE>/chapter-3/list.scala", "sealed trait ")
+file://<WORKSPACE>/chapter-3/list.scala:1: error: expected identifier; obtained eof
+sealed trait 
+             ^
