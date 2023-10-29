@@ -28,4 +28,13 @@ object List {
         case Nil => sys.error("Attempted to set head of empty list.")
         case Cons(_,t) => Cons(h, t)
     }
+
+    def drop[A](l: List[A], n: Int): List[A] = n match {
+        case -1 => sys.error("Negative n value")
+        case 0 => l
+        case x => l match {
+            case Nil => sys.error("Attempted to remove element from empty list")
+            case Cons(_, t) => drop(t, x-1)
+        }
+    }
 }
